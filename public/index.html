@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="shortUrlApp">
+    <head>
+        <title>urlshortner</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+    </head>
+    
+    <body>
+        <h2>ok we are here </h2>
+        <section ng-controller="shortAppCtlr">
+            
+            <input type="text" name="enter URL" ng-model="urlToShorten">
+            <a ng-href="/new/{{urlToShorten}}">Get shorUrl</a>
+        </section>
+    </body>
+</html>
